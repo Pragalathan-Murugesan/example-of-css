@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>text</title>
+    </head>
+<body>
+
+Name: <input onmouseover="testName()"  onmouseout="testName()"><br><p id="p1"> </p><br>
+Email: <input onmouseover="testName()"  onmouseout="email()"><br><p id="p2"> </p><br>
+password: <input onmouseover="testName()"  onmouseout="password()"><br><p id="p3"> </p><br>
+age: <input onmouseover="testName()"  onmouseout="age()"><br><p id="p4"> </p><br>
+<button onclick ="Apply()">Apply</button><br><br>
+
+<script>
+
+x = document.getElementsByTagName("input");
+function testName() {
+  if(x[0].value == "")
+  {
+    document.getElementById("p1").innerHTML ="Please Enter Name";
+  }
+  if(x[0].value != "")
+  {
+    document.getElementById("p1").innerHTML ="";
+  }
+  if(x[1].value == "")
+  {
+    document.getElementById("p2").innerHTML ="Please Enter Email";
+  }
+  if(x[1].value != "")
+  {
+    document.getElementById("p2").innerHTML ="";
+  }
+  if(x[2].value == "")
+  {
+    document.getElementById("p3").innerHTML ="Please Enter Your Password";
+  }
+  if(x[2].value != "")
+  {
+    document.getElementById("p3").innerHTML ="";
+  }
+  if(x[3].value == "")
+  {
+    document.getElementById("p4").innerHTML ="Please Enter Age";
+  }
+  if(x[3].value != "")
+  {
+    document.getElementById("p4").innerHTML ="";
+  }
+  
+}
+
+
+</script>
+
+</body>
+</html>
